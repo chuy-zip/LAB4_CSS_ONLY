@@ -28,7 +28,7 @@
   position:relative;
   left: -85px;
   top: 10px;
-  z-index: 3;
+  z-index: 4;
   width: 60px;
   height: 135px;
   background-color: #ffffff;
@@ -37,6 +37,34 @@
   grid-row-end: 4;
   border-color: black;
   rotate: -110deg;
+}
+
+.shell-1{
+  position:relative;
+  left: 50px;
+  top: 70px;
+  z-index: 3;
+  width: 120px;
+  height: 85px;
+  background-color: #ddddaa;
+  border-radius: 50%;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  border-color: black;
+}
+
+.shell-2{
+  position:relative;
+  left: 75px;
+  top: 140px;
+  z-index: 3;
+  width: 70px;
+  height: 40px;
+  background-color: #ddddaa;
+  border-radius: 50%;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  border-color: black;
 }
 
 .head{
@@ -87,6 +115,46 @@
   rotate: 130deg;
 }
 
+.tail{
+  position:relative;
+  bottom: 130px;
+  z-index: 1;
+  width: 80px;
+  height: 165px;
+  background-color: #2e4769;
+  border-radius: 50% 50% 50% 50% / 10% 9% 91% 90%;
+  grid-column-start: 4;
+  grid-row-end: 5;
+  border-color: black;
+  rotate: 70deg;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: relative;
+  grid-column-start: 3;
+  grid-row-end: 3;
+}
+
+.triangle .left-ear{
+  position: relative;
+  bottom: 20px;
+  left: -15px;
+  border-top: 100px solid #395884;
+  border-right: 100px solid transparent;
+  z-index: 2;
+}
+
+.triangle .right-ear{
+  position: relative;
+  bottom: 20px;
+  left: 130px;
+  border-top: 100px solid #395884;
+  border-left: 100px solid transparent;
+  z-index: 4;
+}
+
 .grid-container {
   display: grid;
  
@@ -94,6 +162,6 @@
   grid-template-columns: 200px 200px 200px 200px 200px; /* Define columns in pixels */
   grid-template-rows: 200px 200px 200px 200px 200px; /* Define rows in pixels */
   background-color: #dddddd;
-  }
+}
 
 
