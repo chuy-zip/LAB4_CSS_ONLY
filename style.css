@@ -1,0 +1,7 @@
+.body {
+    width: 200px;
+    height: 250px;
+    background-color: #77ddee;
+    position: relative;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
