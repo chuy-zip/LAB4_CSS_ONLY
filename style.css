@@ -89,6 +89,16 @@
   border-radius: 50%;
 }
 
+.head > .eye:nth-child(1) {
+  left: 10%;
+  bottom: -40%; 
+}
+
+.head > .eye:nth-child(2) {
+  right: -64%; 
+  bottom: -12%; 
+}
+
 .head > .eye > .pupil{
   position: relative;
   background: #ffffff; 
@@ -98,16 +108,6 @@
   height: 22px;
   border-radius: 50%;
   rotate: 10deg;
-}
-
-.head > .eye:nth-child(1) {
-  left: 10%;
-  bottom: -40%; 
-}
-
-.head > .eye:nth-child(2) {
-  right: -64%; 
-  bottom: -12%; 
 }
 
 .head > .nose {
@@ -221,3 +221,47 @@
 }
 
 
+.head > .freckles{
+  position: relative;
+  width: 5px; 
+  height: 5px; 
+  background-color: black;
+  border-radius: 50%;
+  
+}
+
+.freckles::before,
+.freckles::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 5px; 
+  height: 5px; 
+  background-color: black; 
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.freckles::before {
+  top: -6.5px;
+  left: 30px; 
+  transform: translate(-50%, -50%);
+}
+
+.freckles::after {
+  top: -5px;
+  right: -12px; 
+  transform: translate(50%, -50%);
+}
+
+.head > .first-freckles{
+  position: relative;
+  left: 37px;
+  bottom: 48px;
+}
+
+.head > .last-freckles{
+  position: relative;
+  left: 185px;
+  bottom: 53px;
+}
