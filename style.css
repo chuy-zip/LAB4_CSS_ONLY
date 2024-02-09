@@ -67,18 +67,74 @@
   border-color: black;
 }
 
-.head{
+.head {
   position: relative;
-  left: -20px;
+  left: -30px;
   bottom: 40px;
-  width: 255px;
+  width: 270px;
   height: 255px;
   z-index: 3;
   background-color: #ffffff;
   border-radius: 50%;
   grid-column-start: 3;
-  grid-row-end: 3;border-color: black;
+  grid-row-end: 3;
+  border-color: black;
 }
+
+.head > .eye {
+  position: relative;
+  background: black; 
+  width: 50px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.head > .eye > .pupil{
+  position: relative;
+  background: #ffffff; 
+  right: -35%;
+  bottom: -5%;
+  width: 20px;
+  height: 22px;
+  border-radius: 50%;
+  rotate: 10deg;
+}
+
+.head > .eye:nth-child(1) {
+  left: 10%;
+  bottom: -40%; 
+}
+
+.head > .eye:nth-child(2) {
+  right: -64%; 
+  bottom: -12%; 
+}
+
+.head > .nose {
+  position: relative;
+  right: -33%;
+  bottom: 5%; 
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #B87A2D;
+}
+
+.head > .mouth {
+  position: relative;
+  left: 38%;
+  top: -0%;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #000000;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(225deg);
+  z-index: 4;
+}
+
+
+
 
 .neck{
   position: relative;
@@ -117,16 +173,16 @@
 
 .tail{
   position:relative;
-  bottom: 130px;
+  bottom: 110px;
   z-index: 1;
-  width: 80px;
-  height: 165px;
+  width: 60px;
+  height: 140px;
   background-color: #2e4769;
   border-radius: 50% 50% 50% 50% / 10% 9% 91% 90%;
   grid-column-start: 4;
   grid-row-end: 5;
   border-color: black;
-  rotate: 70deg;
+  rotate: 60deg;
 }
 
 .triangle {
@@ -140,7 +196,7 @@
 .triangle .left-ear{
   position: relative;
   bottom: 20px;
-  left: -15px;
+  left: -20px;
   border-top: 100px solid #395884;
   border-right: 100px solid transparent;
   z-index: 2;
@@ -149,9 +205,9 @@
 .triangle .right-ear{
   position: relative;
   bottom: 20px;
-  left: 130px;
-  border-top: 100px solid #395884;
-  border-left: 100px solid transparent;
+  left: 150px;
+  border-top: 80px solid #395884;
+  border-left: 80px solid transparent;
   z-index: 4;
 }
 
