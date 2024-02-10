@@ -133,6 +133,11 @@
   height: 50px;
   border-radius: 50%;
   background-color: #77ddee;
+  transition: background-color 1s ease;
+}
+
+.neck-container:hover > .neck {
+  background-color: #8EAAC4;
 }
 
 .neck:nth-child(1){
@@ -172,6 +177,15 @@
   grid-column-start: 3;
   grid-row-end: 4;
   border-color: black;
+  transition: background-color 1s ease;
+}
+
+.neck-container:hover ~ .body {
+  background-color: #8EAAC4;
+}
+
+.neck-container:hover + .body {
+  background-color: #8EAAC4;
 }
 
 .left-arm {
@@ -186,6 +200,17 @@
   grid-row-end: 4;
   border-color: black;
   rotate: -90deg;
+  animation-iteration-count: infinite;
+}
+
+.left-arm:hover {
+  animation: helloRotation 0.7s linear forwards infinite;
+}
+
+@keyframes helloRotation {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(30deg); }
+  100% { transform: rotate(0); }
 }
 
 .right-arm {
@@ -215,6 +240,7 @@
   grid-column-start: 3;
   grid-row-end: 4;
   border-color: black;
+  transition: background-color 1s ease;
 }
 
 .shell-2{
@@ -229,6 +255,15 @@
   grid-column-start: 3;
   grid-row-end: 4;
   border-color: black;
+  transition: background-color 1s ease;
+}
+
+.neck-container:hover ~ .shell-1 {
+  background-color: #F4A483;
+}
+
+.neck-container:hover ~ .shell-2{
+  background-color: #F4A483;
 }
 
 .tail{
@@ -243,6 +278,11 @@
   grid-row-end: 5;
   border-color: black;
   rotate: 60deg;
+  transition: background-color 1s ease;
+}
+
+.neck-container:hover ~ .tail{
+  background-color: #276369;
 }
 
 .left-feet{
@@ -258,6 +298,11 @@
   grid-row-end: 5;
   border-color: black;
   rotate: -130deg;
+  transition: background-color 1s ease;
+}
+
+.neck-container:hover ~ .left-feet{
+  background-color: #276369;
 }
 
 .right-feet{
@@ -273,6 +318,11 @@
   grid-row-end: 5;
   border-color: black;
   rotate: 130deg;
+  transition: background-color 1s ease;
+}
+
+.neck-container:hover ~ .right-feet{
+  background-color: #276369;
 }
 
 .triangle {
